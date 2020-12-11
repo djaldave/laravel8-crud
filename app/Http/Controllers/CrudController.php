@@ -45,7 +45,7 @@ class CrudController extends Controller
         $request->validate([
             'title'=> 'required|max:255',
             'description'=> 'required|max:255',
-            'price'=> 'required|max:255'
+            'price'=> 'required|max:255|numeric'
         ]);
         $post = Post::find($id);
         $post->title = $request->get('title');
