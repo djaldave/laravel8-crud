@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource("index", "App\Http\Controllers\CrudController");
+Route::resource("/", "App\Http\Controllers\CrudController");
+
