@@ -1,4 +1,5 @@
-laravel new laravel8-crud
+create laravel:
+`laravel new laravel8-crud`
 
 #### inside the folder
 `composer require laravel/ui`
